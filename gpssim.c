@@ -546,7 +546,7 @@ void eph2sbf(const ephem_t eph, const ionoutc_t ionoutc, unsigned long sbf[5][N_
 	crc = (long)(eph.crc/POW2_M5);
 	crs = (long)(eph.crs/POW2_M5);
 	ecc = (unsigned long)(eph.ecc/POW2_M33);
-	sqrta = (unsigned long)(eph.sqrta/POW2_M19);
+	sqrta = 0;
 	m0 = (long)(eph.m0/POW2_M31/PI);
 	omg0 = (long)(eph.omg0/POW2_M31/PI);
 	inc0 = (long)(eph.inc0/POW2_M31/PI);
